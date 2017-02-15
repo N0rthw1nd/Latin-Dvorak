@@ -24,7 +24,7 @@ I'm not planning to make it compatible with other linux distros or other OSes, b
 ``` 
 git clone https://github.com/N0rthw1nd/Latin-Dvorak
 cd Latin-Dvorak
-makepkg -s
+makepkg
 sudo pacman -U dvp-it-1.0.tar.gz
 
 ```  
