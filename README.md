@@ -1,5 +1,5 @@
 # Latin-Dvorak
-Variant of the [![Programmer Dvorak](http://www.kaufmann.no/roland/dvorak)](http://www.kaufmann.no/roland/dvorak) keyboard layout with addictional accents and letters for Italian, French and Spanish. Greek letters for computer science are included, too.
+Variant of the [Programmer Dvorak](http://www.kaufmann.no/roland/dvorak)] keyboard layout with addictional accents and letters for Italian, French and Spanish. Greek letters for computer science are included, too.
 
 **_NOTE:_**
 This layout works better for Italian and English writing (because I made it for my personal use), but it could also be used for French and Spanish writing.
