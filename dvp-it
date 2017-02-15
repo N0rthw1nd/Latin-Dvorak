@@ -6,7 +6,8 @@
 // 2- Symbols have been placed in locations that give good hand-alternation and finger rolling with
 // symbols that usually follows, accents are possible using combinations with Compose Key (Altgr and Altgr+Shift)
 // 3- Greek symbols for computer scientists have been added on the lower row, starting from left side 
-// (I placed the uppercase letters for computational complexity and mathematic operations on Altgr and the lowercase on Altgr+Shit even if it is counterintuitive because the first ones are more used in computer science)
+// (I placed the uppercase letters for computational complexity and mathematic operations on Altgr and the lowercase on Altgr+Shit
+// even if it is counterintuitive because the first ones are more used in computer science)
 
 partial alphanumeric_keys
 xkb_symbols "dvp" {
