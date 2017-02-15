@@ -1,7 +1,7 @@
 # Latin-Dvorak
 Variant of the [![Programmer Dvorak](http://www.kaufmann.no/roland/dvorak)](http://www.kaufmann.no/roland/dvorak) keyboard layout with addictional accents and letters for Italian, French and Spanish. Greek letters for computer science are included, too.
 
-** _NOTE:_ **
+**_NOTE:_**
 This layout works better for Italian and English writing (because I made it for my personal use), but it could also be used for French and Spanish writing.
 All the additional characters for non-english languages can be accessed using the "Alt Key" for level 3 and level 4, in my case they are "AltGr" and "AltGr+Shift" but they can differ basing on your OS configuration.
 
@@ -18,14 +18,14 @@ I'm not planning to make it compatible with other linux distros or other OSes, b
 
 # Installation
 
-** Arch Linux: **
+**Arch Linux:**
+``` 
+git clone https://github.com/N0rthw1nd/Latin-Dvorak
+cd Latin-Dvorak
+makepkg -s
+sudo pacman -U dvp-it-1.0.tar.gz
 
-_Clone the repository_
-`git clone https://github.com/N0rthw1nd/Latin-Dvorak`
-`cd Latin-Dvorak`
-`makepkg -s`
-`sudo pacman -U dvp-it-1.0.tar.gz`
-  
+```  
 # Usage
 
 `setxkbmap dvp-it`
