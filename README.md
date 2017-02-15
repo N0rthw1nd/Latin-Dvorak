@@ -3,6 +3,7 @@ Variant of the [![Programmer Dvorak](http://www.kaufmann.no/roland/dvorak)](http
 
 **_NOTE:_**
 This layout works better for Italian and English writing (because I made it for my personal use), but it could also be used for French and Spanish writing.
+
 All the additional characters for non-english languages can be accessed using the "Alt Key" for level 3 and level 4, in my case they are "AltGr" and "AltGr+Shift" but they can differ basing on your OS configuration.
 
 # Main Features
@@ -13,7 +14,8 @@ All the additional characters for non-english languages can be accessed using th
 - The characters for computational complexity have been placed under the left home row, on level 3 the uppercase and on level 4 the lowercase (that's because the first ones are more used)
 
 # OS Compatibility
-Actually this layout is mantained only for _Arch Linux_
+Actually this layout is mantained **only** for **_Arch Linux_**
+
 I'm not planning to make it compatible with other linux distros or other OSes, but if some of you are interested in it, I accept any form of collaboration.
 
 # Installation
