@@ -10,7 +10,7 @@ All the additional characters for non-english languages can be accessed using th
 - Numbers are placed in Shift position in their standard order: 1..0 
 - The accents are placed on the homerow where the vowels lay: grave accents are on level 3 and acute accents are on level 4.
 - Character 'È' has been placed on level 3 in the 'è' position for an Italian Keyboard.
-- Greek letters are placed on the lower row except of Δ in the 'd' position on level 3 for a standar dvorak 
+- Greek letters are placed on the lower row except of Δ in the 'd' position on level 3 for a standard Dvorak keyboard
 - The characters for computational complexity have been placed under the left home row, on level 3 the uppercase and on level 4 the lowercase (that's because the first ones are more used)
 
 # OS Compatibility
