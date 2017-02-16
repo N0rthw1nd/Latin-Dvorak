@@ -8,7 +8,7 @@ arch=('any')
 license=('GPL3')
 makedepends=('coreutils')
 source=('LICENSE' 'README.md' 'dvp-it') 
-md5sums=('84dcc94da3adb52b53ae4fa38fe49e5d' '2e2fae17ab435b17322fa0b002a70dac' '18705a9066e12d9e503525d43771e23b')
+md5sums=('84dcc94da3adb52b53ae4fa38fe49e5d' '51b4a0358f1a7561e2bb5616a6e812d4' '18705a9066e12d9e503525d43771e23b')
 
 package() {
 	mkdir -p $pkgdir/usr/share/X11/X11/xkb/symbols
