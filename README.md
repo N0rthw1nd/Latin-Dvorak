@@ -21,13 +21,13 @@ I'm not planning to make it compatible with other linux distros or other OSes, b
 # Installation
 
 **Arch Linux:**
-``` 
+```
 git clone https://github.com/N0rthw1nd/Latin-Dvorak
 cd Latin-Dvorak
 makepkg
-sudo pacman -U dvp-it-1.0.tar.gz
+sudo pacman -U dvp-it-1.0-1-any.pkg.tar.xz
+```
 
-```  
 # Usage
 
 `setxkbmap dvp-it`
