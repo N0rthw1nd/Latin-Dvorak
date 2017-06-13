@@ -1,0 +1,79 @@
+// This is a modified version of the Programmer Dvorak by Roland Kaufmann 
+// Mantained by Antonino Tramontana <antonino.tram@tutanota.com>
+// License: GPL v3
+// Main features: 
+// 1- Numbers are in shift position (like French) in standard order.
+// 2- Symbols have been placed in locations that give good hand-alternation and finger rolling with
+// symbols that usually follows, accents are possible using combinations with Compose Key (Altgr and Altgr+Shift)
+// 3- Greek symbols for computer scientists have been added on the lower row, starting from left side 
+// (I placed the uppercase letters for computational complexity and mathematic operations on Altgr and the lowercase on Altgr+Shit
+// even if it is counterintuitive because the first ones are more used in computer science)
+
+partial alphanumeric_keys
+xkb_symbols "dvp" {
+    include "us(dvorak)"
+
+    name[Group1] = "Latin - Dvorak For Programmers";
+
+    //             Unmodified       Shift           AltGr            Shift+AltGr
+    // symbols row, left side
+    key <TLDE> { [ dollar,          asciitilde,     dead_tilde                  ] }; // $ 
+    key <AE01> { [ ampersand,       1 					        ] }; // & % 
+    key <AE02> { [ bracketleft,     2,              currency                    ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" }; 
+    key <AE03> { [ braceleft,       3,              cent                        ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE04> { [ braceright,      4,              yen                         ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE05> { [ parenleft,       5,              EuroSign                    ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE06> { [ equal,           6,              sterling                    ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+
+    // symbols row, right side
+    key <AE07> { [ asterisk,        7,		    plusminus			], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE08> { [ parenright,      8,              onehalf                     ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE09> { [ plus,            9,              copyright     		], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE10> { [ bracketright,    0                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE11> { [ exclam,          percent,              exclamdown                  ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE12> { [ numbersign,      grave,          dead_grave                  ] };
+    key <BKSP> { [ BackSpace                                                    ] };
+
+    // upper row, left side
+    key <AD01> { [ semicolon,       colon,          dead_diaeresis              ] }; //	;  : ¨ 
+    key <AD02> { [ comma,           less,           guillemotleft               ] }; // , < « ˇ 
+    key <AD03> { [ period,          greater,        guillemotright              ] }; // . > » · 
+    key <AD04> { [ p,               P,              paragraph,       section    ] }; // ¶ § 
+    key <AD05> { [ y,               Y,              udiaeresis,      Udiaeresis ] }; // Ü Ü
+
+    // upper row, right side
+    key <AD08> { [ c,               C,              ccedilla,        Ccedilla   ] }; // ç Ç 
+    key <AD09> { [ r,               R,              registered,      trademark  ] }; // ® ™ 
+    key <AD11> { [ slash,           question,       Egrave,          questiondown] }; // È ¿
+    key <AD12> { [ at,              asciicircum,    dead_circumflex, dead_caron ] }; 
+
+    // home row, left side
+    key <AC01> { [ a,               A,              agrave,           aacute	] }; // à á
+    key <AC02> { [ o,               O,              ograve,           oacute	] }; // ò ó
+    key <AC03> { [ e,               E,              egrave,	      eacute    ] }; // è é
+    key <AC04> { [ u,               U,              ugrave,	      uacute    ] }; // ù ú 
+    key <AC05> { [ i,               I,              igrave,	      iacute     ] }; // ì í
+
+    // home row, right side
+    // Some often used Greek symbols here
+    key <AC06> { [ d,               D,              Greek_DELTA,      Greek_delta] }; //  Δ δ
+    key <AC07> { [ h,               H,              dead_acute                  ] }; // ´ 
+    //key <AC08> { [ t,               T,            Greek_tau			] }; // τ 
+    key <AC09> { [ n,               N,              ntilde,          Ntilde     ] }; // ñ Ñ
+   // key <AC10> { [ s,               S,              Greek_finalsmallsigma       ] }; // ς 
+    key <AC11> { [ minus,           underscore,     degree,	     hyphen	], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <BKSL> { [ backslash,       bar                                         ] };
+
+    // lower row, left side
+    // Greek symbols for computer scientists
+    key <LSGT> { [ less,	    greater,	    Greek_alpha,      Greek_phi     ] }; // α φ
+    key <AB01> { [ apostrophe,	    quotedbl,	    dead_acute			    ] }; 
+    key <AB02> { [ q,		    Q,		    Greek_OMICRON,    Greek_omicron ] }; // Ο ο
+    key <AB03> { [ j,		    J,		    Greek_THETA,      Greek_theta   ] }; // Θ θ
+    key <AB04> { [ k,		    K,		    Greek_OMEGA,      Greek_omega   ] }; // Ω ω 
+    key <AB05> { [ x,		    X,              Greek_SIGMA,      Greek_sigma   ] }; // Σ σ 
+    key <AB06> { [ b,		    B,		    Greek_beta,	      Greek_BETA    ] }; // β Β
+    key <AB07> { [ m,		    M,		    Greek_mu	    ] };		// μ 
+    key <AB08> { [ w,		    W,		    Greek_pi,	      Greek_PI] };	// π Π 
+    key <AB09> { [ v,		    V,		    Greek_epsilon,	      Greek_EPSILON] }; // ε Ε
+}; 
