@@ -27,10 +27,11 @@ $ git clone https://github.com/N0rthw1nd/Latin-Dvorak
 $ cd Latin-Dvorak
 $ makepkg -si
 ```
-**Windows**
+**Windows:**
 
 **NOTE:** _The source code is configured to install the layout under Italian Language, but you should be able to change this in the source code with MWLC._  
-Install Microsoft Windows Layout Creator (MWLC) load the layout, build it as a package and install it (with the setup), then reboot your computer. Now you can select it from the layout menu.
+
+Install Microsoft Windows Layout Creator (MWLC), load the layout, build it as a package and install it (with the setup), then reboot your computer. Now you can select it from the layout menu.
 
 **macOS:**
 ```
@@ -40,9 +41,13 @@ Set as layout "dvp-it" under mac keyboard preferences.
 # Usage
  
  **Arch Linux**
+ 
 I recommend you set the level 3 switch, if you hadn't done it yet, directy inside xinitrc (in your home directory) as above:
+
 `$ setxkbmap -option lv3:ralt_switch`
+
 To switch layout:
+
 `$ setxkbmap dvp-it`
 
  New layout loaded.... Enjoy!!
