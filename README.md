@@ -28,7 +28,8 @@ $ cd Latin-Dvorak
 $ makepkg -si
 ```
 **Windows**
-NOTE: The source code is configured to install the layout under Italian Language, but you should be able to change this in the source code with MWLC.  
+
+**NOTE:** _The source code is configured to install the layout under Italian Language, but you should be able to change this in the source code with MWLC._  
 Install Microsoft Windows Layout Creator (MWLC) load the layout, build it as a package and install it (with the setup), then reboot your computer. Now you can select it from the layout menu.
 
 **macOS:**
