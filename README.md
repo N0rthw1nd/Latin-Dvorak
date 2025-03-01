@@ -14,10 +14,10 @@ All the additional characters for non-english languages can be accessed using th
 - The characters for computational complexity have been placed under the left home row, on level 3 the uppercase and on level 4 the lowercase (that's because the first ones are more used)
 
 # OS Compatibility
-I'm maintaining this layout only for **_Arch Linux_**
-However, due to help of new collaborators, configuration files for **_Windows_** and **_macOS_** have been added.
-Currently the only issue with these two OS is that uppercase vowels are not working.
-I'm not planning to make it compatible with other linux distros or other OSes, but if some of you are interested in it, I accept any form of collaboration.
+I'm maintaining this layout mainly for **_Arch Linux_** and **_Debian/Ubuntu_**.
+Configuration files for **_Windows_** and **_macOS_** have also been added thanks to collaborators.
+Currently the only issue with Windows and macOS is that uppercase vowels are not working.
+If you are interested in adapting it for other OS or distributions, I accept any form of collaboration.
 
 # Installation
 
@@ -27,6 +27,34 @@ $ git clone https://github.com/N0rthw1nd/Latin-Dvorak
 $ cd Latin-Dvorak
 $ makepkg -si
 ```
+
+**Debian/Ubuntu:**
+
+There are three ways to install this keyboard layout on Debian-based systems:
+
+1. **Direct installation** (recommended):
+   ```
+   $ git clone https://github.com/N0rthw1nd/Latin-Dvorak
+   $ cd Latin-Dvorak/Debian
+   $ sudo ./install-direct.sh
+   ```
+
+2. **Build and install as a Debian package**:
+   ```
+   $ git clone https://github.com/N0rthw1nd/Latin-Dvorak
+   $ cd Latin-Dvorak/Debian
+   $ dpkg-buildpackage -b -us -uc
+   $ cd ..
+   $ sudo dpkg -i dvp-it_*.deb
+   ```
+
+3. **Using the installation script**:
+   ```
+   $ git clone https://github.com/N0rthw1nd/Latin-Dvorak
+   $ cd Latin-Dvorak/Debian
+   $ sudo ./dvp-it-debian-install.sh
+```
+
 **Windows:**
 
 **NOTE:** _The source code is configured to install the layout under Italian Language, but you should be able to change this in the source code with MWLC._  
@@ -38,9 +66,10 @@ Install Microsoft Windows Layout Creator (MWLC), load the layout, build it as a 
 $ sudo cp dvp-it.keylayout /Library/Keyboard\ Layouts
 Set as layout "dvp-it" under mac keyboard preferences.
 ```
+
 # Usage
  
- **Arch Linux**
+**Linux (Arch, Debian, Ubuntu):**
  
 I recommend you set the level 3 switch, if you hadn't done it yet, directy inside xinitrc (in your home directory) as above:
 
@@ -50,7 +79,28 @@ To switch layout:
 
 `$ setxkbmap dvp-it`
 
- New layout loaded.... Enjoy!!
+New layout loaded.... Enjoy!!
+
+# Troubleshooting
+
+If you get an error like "Error loading new keyboard description" when running `setxkbmap dvp-it`:
+
+1. Make sure the keyboard layout was properly installed:
+   ```
+   ls -la /usr/share/X11/xkb/symbols/dvp-it
+   ```
+
+2. Try refreshing the XKB cache:
+   ```
+   sudo rm -f /var/lib/xkb/*.xkm
+   ```
+
+3. Try installing using the direct installation method:
+   ```
+   sudo ./install-direct.sh
+   ```
+
+4. Try rebooting your system after installation.
 
 # KeyBoard Preview:
 

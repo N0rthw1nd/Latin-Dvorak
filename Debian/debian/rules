@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# rules file for dvp-it Debian package
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	# Install X11 keyboard layout
+	mkdir -p $(CURDIR)/debian/dvp-it/usr/share/X11/xkb/symbols
+	install -m 644 dvp-it $(CURDIR)/debian/dvp-it/usr/share/X11/xkb/symbols/
+	
+	# Install console keymap
+	mkdir -p $(CURDIR)/debian/dvp-it/usr/share/kbd/keymaps/i386/dvorak
+	gzip -c < dvp-it.map > dvp-it.map.gz
+	install -m 644 dvp-it.map.gz $(CURDIR)/debian/dvp-it/usr/share/kbd/keymaps/i386/dvorak/
+	
+	# Install documentation
+	mkdir -p $(CURDIR)/debian/dvp-it/usr/share/doc/dvp-it
+	install -m 644 ../README.md $(CURDIR)/debian/dvp-it/usr/share/doc/dvp-it/
+	install -m 644 ../LICENSE $(CURDIR)/debian/dvp-it/usr/share/doc/dvp-it/ 

@@ -1,0 +1,19 @@
+Source: dvp-it
+Maintainer: Antonino Tramontana
+Section: x11
+Priority: optional
+Standards-Version: 4.6.0
+Build-Depends: debhelper-compat (= 13)
+
+Package: dvp-it
+Version: 1.0
+Architecture: all
+Description: Latin-Dvorak keyboard layout for Italian, French, Spanish with Greek letters
+ A variant of the Programmer Dvorak keyboard layout with additional accents
+ and letters for Italian, French, Spanish. Greek letters for computer science and math
+ are included, too.
+ .
+ Features:
+  * Numbers in Shift position in standard order: 1..0
+  * Accents on homerow where vowels lay
+  * Greek letters for computer scientists 
